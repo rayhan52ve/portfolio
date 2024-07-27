@@ -41,8 +41,8 @@
     <div id="particles-js"></div>
 
     <div class="content">
-        <img class="tilt" src="frontend/images/home-pic.png" alt="">
-        <h3> shaikh <span>anas</span> </h3>
+        <img class="tilt" src="frontend/images/sr1.jpg" alt="">
+        <h3> sajid <span>rayhan</span> </h3>
         <p> i am a <span class="typing-text"> front end developer </span> </p>
         <a href="#about" class="btn">about me</a>
     </div>
@@ -64,7 +64,7 @@
         </div>
 
         <div class="content">
-            <h3> my name is <span> shaikh anas </span> </h3>
+            <h3> my name is <span> Sajid Rayhan </span> </h3>
             <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad debitis, dolorem omnis dolorum non provident distinctio inventore culpa in, nam eligendi quos modi vel aliquid blanditiis velit natus voluptatem deleniti.</p>
             <div class="box-container">
                 <div class="box">

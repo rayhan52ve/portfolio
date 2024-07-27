@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\AboutmeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,13 +15,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('Frontend.home');
+Route::get('/cr', function () {
+    return view('Backend.modules.aboutme.create');
 });
 
-Route::get('/home', function () {
+Route::get('/', function () {
     return view('Frontend.home');
-})->middleware(['auth', 'verified'])->name('home');
+})->name('home');
 
 Route::get('/dashboard', function () {
     return view('Backend.dashboard');
@@ -39,8 +40,16 @@ require __DIR__.'/auth.php';
 
 
 
-Route::namespace('App\Http\Controllers')->group(function(){
-    Route::middleware('auth')->group(function () {
-    // Route::get('/dashboard', 'AdminController@dashboard')->name('admin.dashboard');
-    });
-});
+// Route::namespace('App\Http\Controllers')->group(function(){
+//     Route::middleware('auth')->group(function () {
+//     // Route::get('/dashboard', 'AdminController@dashboard')->name('admin.dashboard');
+//     });
+// });
+
+
+
+
+Route::get('aboutme/create',[AboutmeController::class,'create'])->name('aboutme.create');
+Route::post('aboutme',[AboutmeController::class,'store'])->name('aboutme.store');
+
+
